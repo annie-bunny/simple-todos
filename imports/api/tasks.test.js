@@ -1,11 +1,11 @@
-/* eslint-ОКР мокко */
+/* eslint-env mocha */
  
-импорт { Метеор } от 'Метеор/Метеор';
+import { Meteor } from 'meteor/meteor';
  
-если (Метеор.isServer) {
- опишите('задачи', () => {
- описать("методы", () => {
- он(можно удалить владел задач', () => {
+if (Meteor.isServer) {
+  describe('Tasks', () => {
+    describe('methods', () => {
+      it('can delete owned task', () => {
       });
     });
   });
